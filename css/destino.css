@@ -1,0 +1,109 @@
+table {
+  animation-duration: 5s;
+  animation-name: revelar;
+}
+
+@keyframes revelar {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 2;
+  }
+  60% {
+    opacity: 3;
+  }
+  80% {
+    opacity: 4;
+  }
+  100% {
+    opacity: 5;
+  }
+}
+.btn:hover {
+  transform: translateX(30px);
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+a:visited {
+  color: violet;
+}
+
+a:active {
+  background-color: cadetblue;
+}
+
+body {
+  background-color: rgba(138, 228, 59, 0.1);
+}
+
+nav {
+  background-color: rgba(138, 228, 59, 0.1);
+}
+nav ul {
+  background-color: rgba(138, 228, 59, 0.1);
+}
+nav ul li {
+  background-color: rgba(138, 228, 59, 0.1);
+}
+
+.col-10 #nosotros {
+  background-color: #DEF2C7;
+}
+.col-10 #pfnosotros {
+  background-color: #DEF2C7;
+}
+
+.cabanas {
+  background-color: rgba(185, 222, 153, 0.1);
+}
+
+.col-10 {
+  background-color: rgba(138, 228, 59, 0.1);
+}
+
+.col-lg-2 {
+  background-color: rgba(138, 228, 59, 0.1);
+}
+
+.contactanos, .icono {
+  align-items: center;
+  margin: 60px 0;
+}
+.contactanos a, .icono a {
+  text-decoration: none;
+  color: #4A7F73;
+}
+
+.icono h3 {
+  color: #31120D;
+}
+
+.container .col-lg-4 {
+  background-color: #D8EBE1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+  color: #4A7F73;
+}
+footer a {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #4A7F73;
+  align-items: center;
+}
+
+.container .col-8 {
+  background-color: rgba(138, 228, 59, 0.1);
+}
+
+/*# sourceMappingURL=destino.css.map */

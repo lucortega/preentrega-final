@@ -1,0 +1,38 @@
+table {
+    animation-duration: 5s;
+    animation-name: revelar;
+}
+
+@keyframes revelar {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 2;
+    }
+    60% {
+        opacity: 3;
+
+    }
+    80% {
+        opacity: 4;
+    }
+    100% {
+        opacity: 5;
+    }
+}
+
+.btn:hover {
+    transform:translateX(30px);
+    transition-property: all;
+    transition-duration: 2s;
+}
+ a:visited {
+     color: violet;
+ }
+a:active {
+    background-color: cadetblue;
+}

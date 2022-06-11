@@ -1,0 +1,92 @@
+
+@import "animaciones";
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    
+}
+@mixin flex-flexstart {
+    display: flex;
+    justify-content: flex-start;
+}
+body {
+    background-color: $color;
+    
+}
+/*MAPITA*/
+$estilos: (
+    color: rgba(185,222,153,10%)
+    textd: none
+);
+/////////*FIN MAPITA*///////
+
+nav {
+    background-color: map-get($estilos ,color );
+    ul {
+        background-color: map-get($estilos ,color );
+        li {
+            background-color: map-get($estilos ,color )
+        }
+    } 
+
+}
+.col-10 {
+    #nosotros {
+        background-color:  #DEF2C7;
+    }
+    #pfnosotros {
+        background-color: #DEF2C7;
+    }
+}
+.cabanas {
+    background-color: map-get($estilos ,color )
+}
+.col-10 {
+  background-color: $color;
+    
+}
+.col-lg-2 {
+    background-color: $color;
+}
+.contactanos {
+    align-items: center;
+	margin: 60px 0;
+    a {
+        text-decoration: map-get($estilos ,textd );
+        color: #4A7F73;
+    }
+}
+
+.icono {
+    @extend .contactanos
+    
+ 
+}
+.icono h3 {
+   
+        color: #31120D;
+    
+}
+.container {
+    .col-lg-4 {
+        background-color: #D8EBE1; 
+    }
+}
+footer {
+    @include flex-center();
+	text-align: center;
+	margin-top: 80px;
+    color: #4A7F73;
+    a {
+      @include flex-flexstart();
+        text-decoration: none;
+	    color: #4A7F73;
+        
+        align-items: center;
+    }
+}
+.container {
+    .col-8 {
+        background-color: map-get($estilos ,color )
+    }
+}
