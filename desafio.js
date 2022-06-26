@@ -10,8 +10,39 @@ let huespedes = parseInt (prompt ("Ingrese cantidad de huespedes"))
     console.log ("bienvenidos a Cabana Verde")
 }
 
+const contenedor = document.getElementsByClassName ("container-fluid")
 
 
+// EVENTOS
+
+const btnEnviar = document.querySelector ("#submit")
+
+btnEnviar.addEventListener ("mousemove", () => {
+    btnEnviar.title = "Haga click si desea enviar el formulario."
+})
+var form = document.getElementById("forms")
+
+form.onclick = function(e){
+    e.preventDefault();
+    var name = document.getElementById("name").value;
+    var surname = document.getElementById("surname").value;
+    document.getElementById("printName").innerHTML=name;
+    document.getElementById("printSurname").innerHTML=surname;
+    
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    document.getElementById("printEmail").innerHTML=email;
+    document.getElementById("printPhone").innerHTML=phone;
+   
+    var country = document.getElementById("country").value;
+    var zip = document.getElementById("zip").value;
+    document.getElementById("printCountry").innerHTML=country;
+    document.getElementById("printZip").innerHTML=zip;
+   
+    var box = document.getElementById("box").value;
+    document.getElementById("printBox").innerHTML=box;
+  
+}
 function Cabana (nombre, huespedes, precio, servicio) {
     this.nombre = nombre
     this.huespedes = huespedes
